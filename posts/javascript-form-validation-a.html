@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	
+<!-- posts/javascript-form-validation-a.html  09:27:30 GMT -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+        
+        <title>Javascript form validation</title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+        <meta name="description" content="Awesome tool to create beautiful forms with JavaScript form validation. Php Contact Form" />
+		<link rel="shortcut icon" href="../favicon.ico" />
+		<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Serif:400,400italic,700italic">
+		<link rel="stylesheet" href="../styles/main.css" type="text/css" />
+		
+		<link rel="stylesheet" href="../styles/fontello/css/fontello.css">
+		<link rel="stylesheet" href="../styles/fontello/css/animation.css">	
+		<!--[if IE 7]>
+		<link rel="stylesheet" href="http://formfan.com/styles/fontello/css/fontello-ie7.css">
+        <![endif]-->	
+        <link rel="stylesheet" href="template.css">
+	
+<script type="text/javascript" src="../styles/jquery.js"></script>	
+<script type="text/javascript" src="../styles/a.js"></script>
+<script type="text/javascript" src="script.js"></script>   
+
+<script type="text/javascript">
+
+var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-51010831-1']);
+  _gaq.push(['_setDomainName', '.github.io']);
+_gaq.push(['_setAllowLinker', true]);
+_gaq.push(['_setAllowHash', false]);
+if(document.cookie.match("(^|;\\s)__utma") && !/utmcsr=\(direct\)/.test(unescape(document.cookie))) {
+    _gaq.push(
+      ['_setReferrerOverride', ''],
+      ['_setCampNameKey', 'aaan'], 
+      ['_setCampMediumKey', 'aaam'], 
+      ['_setCampSourceKey', 'aaas'], 
+      ['_setCampTermKey', 'aaat'], 
+      ['_setCampContentKey', 'aaac'], 
+      ['_setCampCIdKey', 'aaaci']
+    )
+}
+
+_gaq.push(['_trackPageview']);  
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+</script>
+
+
+
+
+
+<script src="highlight/highlight.js"></script>
+<link rel="stylesheet" href="highlight/solarized_light.css" />
+
+<script src="rating/rating.js"></script>
+<link rel="stylesheet" href="rating/wow_rating.css" />
+
+
+
+	</head>
+	<body bgcolor="#ffffff">
+		<div id="block-header">
+			<div class="content">
+				<section id="header-b">
+					<div id="header-left">
+						<div style="position:relative;max-width:492px;"><a href="../index.html"><img src="images/formoid.jpg" alt="css forms"></a></div>
+					</div>	
+					<div id="header-right">
+						<div id="menu">
+						<a href="../index.html">Home</a>
+						<a href="../index-2.html#help">Quick Help</a>
+						<a href="../index-2.html#demo">Live Demo</a>
+						</div>
+						
+						<h3 class="module-title">FormBuilder <br/> stunning form maker</h3>
+						<p>FormBuilder is a free desktop app that helps you easily create 
+						 bootstrap form, jquery ajax form, web form, css form and more in a few seconds without writing a single line of code. Create wonderful online forms in just a few clicks.</p>
+							<div id="left-b">
+								<a data-hint="Form Builder v2.6 (Window XP+)&#10;* Free for non-profit websites" href="http://formoid.com/download/formoid-win-setup.zip" class="button-free hint"><i style="font-size: 25px;" class="icon-download"></i>&nbsp; Free for Win</a>
+							</div>
+                            <div id="left-b">
+								<a data-hint="Form Builder v2.6 (Mac OSX 10.6+)&#10;* Free for non-profit websites" href="http://formoid.com/download/formoid-mac-setup.zip" class="button-buy hint"><i style="font-size: 25px;" class="icon-download"></i>&nbsp; Free for Mac</a>
+							</div>
+                            <div id="right-b">
+								<a data-hint="Form Builder v2.6&#10;* Unlimited commercial website use&#10;* No &#34;Made with FormBuilder&#34; link on forms&#10;* Host forms on our server&#10;(1 year and 10,000 form submissions included)"  href="https://secure.avangate.com/order/checkout.php?PRODS=4555782&amp;QTY=1&amp;CART=1&amp;CARD=2&amp;DESIGN_TYPE=1" onclick="_gaq.push(['_link', this.href]); return false;" class="button-buy hint"><i style="font-size: 25px;" class="icon-basket"></i>&nbsp; Buy now</a>
+							</div>
+					</div>					
+					
+				</section>
+			</div>
+		</div>
+		
+
+<!--		<div id="block-demo">
+			<div class="content">
+				<section id="demo-b">
+				
+				</section>
+			</div>
+		</div>	-->		
+
+
+        <div class="bg-white" id="block-main">	
+            <div class="block-main wrapper ">
+                
+                <div class="grid-block" id="main">
+
+                    <div class="grid-box" id="maininner">
+
+                        
+                    <section class="grid-block" id="content"><div id="system">
+
+           
+            <h1 class="title">Awesome tool to create beautiful forms with JavaScript form validation</h1>
+            
+            <div class="rq">
+            
+            <p>JavaScript is a dynamic programming computer language which provides a convenient way to validate <a href="web-forms-in-web-design-4.html" class="linker">forms</a> before sending it to the web server.</p>
+<video autoplay="autoplay" poster="video/online-forms.jpg" width="800" height="451" onclick="if(/Android/.test(navigator.userAgent))this.play();"><source src="video/form-builder.m4v" type="video/x-m4v" /><source src="video/form-builder.webm" type="video/webm" /><object type="application/x-shockwave-flash" data="video/flashfox.swf" width="800" height="451" style="position:relative;"><param name="movie" value="video/flashfox.swf" /><param name="allowFullScreen" value="true" /><param name="flashVars" value="autoplay=true&amp;controls=false&amp;fullScreenEnabled=false&amp;loop=false&amp;poster=http://formfan.com/posts/video/online-forms.jpg&amp;src=http://formfan.com/posts/video/form-builder.m4v" /><embed src="video/flashfox.swf" width="800" height="451" style="position:relative;" flashVars="autoplay=true&amp;controls=false&amp;fullScreenEnabled=false&amp;loop=false&amp;poster=http://formfan.com/posts/video/online-forms.jpg&amp;src=http://formfan.com/posts/video/form-builder.m4v" allowFullScreen="true" wmode="transparent" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer_en" /><img alt="contact form html" src="video/online-forms.jpg" style="position:absolute;left:0;" width="800" height="451" title="contact form html" /></object></video>
+<p><a href="http://formoid.com/rq/javascript-form/">Javascript form</a> validation will save a lot of time up front, but if the user has turned off JavaScript double-checking the data on the server remains necessary. The two main functions of the <a href="contact-form-builder-2.html" class="linker">form</a> validation include:</p>
+<p>Basic Validation: To make sure data is entered into each <a href="html-contact-form-8.html" class="linker">form</a> field that required it.</p>
+<p>Data Format <a href="http://formoid.com/rq/javascript-form-validation/">Validation</a>: To check that data entered is correct or not. It checks the correct form and value.</p>
+<div class="img"><img style="max-width:700px;width:100%;" alt="javascript form validation" src="images/javascript-form-validation.jpg"/></div>
+<p>JavaScript Validations are of following types:</p>
+<p>•	Required fields</p>
+<p>•	Valid user name</p>
+<p>•	Valid password</p>
+<p>•	Valid e-mail address</p>
+<p>•	Valid phone number</p>
+<p>1.	Required Fields:</p>
+<p>It is a basic JavaScript validation in which the function checks if a field has been left empty. The JavaScript <a href="php-contact-form-%e2%80%93-an-easiest-way-to-interact-with-customers-b.html" class="linker">form</a> will be not be submitted if the field is blank, an alert box will alert a message.</p>
+<p>2.	Valid User Name:</p>
+<p>It is data format validation in which the function checks</p>
+<p>•	If the username field contains anything at all entered by the user.</p>
+<p>•	If the username field is not blank, the function checks the length of the string and permit only usernames that is between 5 and 15 characters.</p>
+<p>•	Then, we use the JavaScript regular expression /\W/ to forbid illegal characters from appearing in usernames. It allows only letters, numbers and underscores.</p>
+<p>3.	Valid Password:</p>
+<p>It is another important JavaScript validation in which the function checks the password field for blankness and allows only letters and numbers but no underscores. Therefore a new regular expression is used to forbid underscores.</p>
+<p>*	This one /[\W_]/ allow only letters and numbers.</p>
+<p>*	seacrh() method and two more regular expressions: /(a-z)+/ and /(0-9)/  allows only passwords that contain letters and at least one numeral.</p>
+<p>4.	Valid e-mail address:</p>
+<p>The JavaScript <a href="html-form-web-form-maker-3.html" class="linker">form</a> also has the above JavaScript validation which is used to check the email address entered by user is real or not.</p>
+<p>*	The data entered for email address must contain at least an @ sign and a dot (.) for which the @ must not be the first character of the email address, and the last dot must at least be one character after the @ sign.</p>
+<p>*	At first we check if the user entered anything at all in the email field. Next, we use regular expression and the test() method to check the field for a compliance. Also we will use trim() function that will trim leading whitespace off the string. This won’t be perfect validation — it is possible to slip not compliant addresses by it — but it's normally good enough.</p>
+<p>5.	Valid Phone Number:</p>
+<p>As the name suggests this JavaScript validation checks if the phone number entered in the JavaScript <a href="php-contact-form-7.html" class="linker">form</a> is valid.</p>
+<p>*	Firstly we use regular expression and the replace () method to clear out any spacer characters.</p>
+<p>*	Then the isNaN() function is used to check if the phone number contain only numbers.</p>
+<p>*	And finally the function checks the length of the string and allows only phone numbers with 10 digits.</p>
+<p><a href="http://formoid.com/">Formoid</a> is an awesome tool to create beautiful <a href="html5-form-features-6.html" class="linker">forms</a> with JavaScript <a href="online-form-maker-5.html" class="linker">form</a> validation .It is an ultimate platform that will provide superior  validated <a href="why-use-jquery-form-builder-9.html" class="linker">form</a>. Formoid provides incredible <a href="html-forms-1.html" class="linker">forms</a> as per requirement. It is simple, powerful and user-friendly tool to meet any requirement of nice forms.</p>            
+                            <div class="rq-link"><a href="index.html">Recent Posts »</a></div>
+            
+                   
+
+                        
+            </div>
+                    
+        
+    </div></section>
+                        
+                    </div>
+                    <!-- maininner end -->
+                    
+    <aside class="grid-box" id="sidebar-a">
+
+            
+            
+            <div class="grid-box width100 grid-v"><div class="module mod-box mod-box-default  deepest"><h3 class="module-title">Related</h3>
+
+<ul class="menu menu-sidebar"><li><span class="rq-post-link">Why use <a href="why-use-jquery-form-builder-9.html">jQuery form</a> builder?</span></li><li><a href="php-contact-form-%e2%80%93-an-easiest-way-to-interact-with-customers-b.html">PHP Contact Form – An Easiest Way to Interact with Customers</a></li><li><span class="rq-post-link"><a href="html5-form-features-6.html">Html5 form</a> features</span></li><li><span class="rq-post-link"><a href="html-form-web-form-maker-3.html">HTML Form</a> & Web Form Maker</span></li></ul>
+
+</div></div>	
+            
+            
+
+    
+    </aside>
+                                    
+                    
+                </div>
+                
+                <!-- main end -->
+
+            </div>
+        </div>
+
+		
+		<div id="block-footer">
+			<div class="content">
+			<section id="bottom-b">
+				<div id="footer-right">
+				<p>Copyright FormBuilder 2014 - All Rights Reserved</p>
+				</div>
+
+			</section>
+			</div>
+		</div>		
+		
+	</body>
+
+<!-- posts/javascript-form-validation-a.html  09:27:30 GMT -->
+</html>
+

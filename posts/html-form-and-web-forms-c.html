@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	
+<!-- posts/html-form-and-web-forms-c.html  09:27:29 GMT -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+        
+        <title>HTML Form and Web Forms</title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+        <meta name="description" content="HTML Form - problems and solutions. Jquery Modal Form" />
+		<link rel="shortcut icon" href="../favicon.ico" />
+		<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Serif:400,400italic,700italic">
+		<link rel="stylesheet" href="../styles/main.css" type="text/css" />
+		
+		<link rel="stylesheet" href="../styles/fontello/css/fontello.css">
+		<link rel="stylesheet" href="../styles/fontello/css/animation.css">	
+		<!--[if IE 7]>
+		<link rel="stylesheet" href="http://formfan.com/styles/fontello/css/fontello-ie7.css">
+        <![endif]-->	
+        <link rel="stylesheet" href="template.css">
+	
+<script type="text/javascript" src="../styles/jquery.js"></script>	
+<script type="text/javascript" src="../styles/a.js"></script>
+<script type="text/javascript" src="script.js"></script>   
+
+<script type="text/javascript">
+
+var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-51010831-1']);
+  _gaq.push(['_setDomainName', '.github.io']);
+_gaq.push(['_setAllowLinker', true]);
+_gaq.push(['_setAllowHash', false]);
+if(document.cookie.match("(^|;\\s)__utma") && !/utmcsr=\(direct\)/.test(unescape(document.cookie))) {
+    _gaq.push(
+      ['_setReferrerOverride', ''],
+      ['_setCampNameKey', 'aaan'], 
+      ['_setCampMediumKey', 'aaam'], 
+      ['_setCampSourceKey', 'aaas'], 
+      ['_setCampTermKey', 'aaat'], 
+      ['_setCampContentKey', 'aaac'], 
+      ['_setCampCIdKey', 'aaaci']
+    )
+}
+
+_gaq.push(['_trackPageview']);  
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+</script>
+
+
+
+
+
+<script src="highlight/highlight.js"></script>
+<link rel="stylesheet" href="highlight/solarized_light.css" />
+
+<script src="rating/rating.js"></script>
+<link rel="stylesheet" href="rating/wow_rating.css" />
+
+
+
+	</head>
+	<body bgcolor="#ffffff">
+		<div id="block-header">
+			<div class="content">
+				<section id="header-b">
+					<div id="header-left">
+						<div style="position:relative;max-width:492px;"><a href="../index.html"><img src="images/formoid.jpg" alt="javascript form validation"></a></div>
+					</div>	
+					<div id="header-right">
+						<div id="menu">
+						<a href="../index.html">Home</a>
+						<a href="../index-2.html#help">Quick Help</a>
+						<a href="../index-2.html#demo">Live Demo</a>
+						</div>
+						
+						<h3 class="module-title">FormBuilder <br/> wonderful form maker</h3>
+						<p>FormBuilder is a free desktop app that helps you easily create 
+						 css forms, css3 form, web form, contact us form and more in a few seconds without writing a single line of code. Create effective online forms in just a few clicks.</p>
+							<div id="left-b">
+								<a data-hint="Form Builder v2.6 (Window XP+)&#10;* Free for non-profit websites" href="http://formoid.com/download/formoid-win-setup.zip" class="button-free hint"><i style="font-size: 25px;" class="icon-download"></i>&nbsp; Free for Win</a>
+							</div>
+                            <div id="left-b">
+								<a data-hint="Form Builder v2.6 (Mac OSX 10.6+)&#10;* Free for non-profit websites" href="http://formoid.com/download/formoid-mac-setup.zip" class="button-buy hint"><i style="font-size: 25px;" class="icon-download"></i>&nbsp; Free for Mac</a>
+							</div>
+                            <div id="right-b">
+								<a data-hint="Form Builder v2.6&#10;* Unlimited commercial website use&#10;* No &#34;Made with FormBuilder&#34; link on forms&#10;* Host forms on our server&#10;(1 year and 10,000 form submissions included)"  href="https://secure.avangate.com/order/checkout.php?PRODS=4555782&amp;QTY=1&amp;CART=1&amp;CARD=2&amp;DESIGN_TYPE=1" onclick="_gaq.push(['_link', this.href]); return false;" class="button-buy hint"><i style="font-size: 25px;" class="icon-basket"></i>&nbsp; Buy now</a>
+							</div>
+					</div>					
+					
+				</section>
+			</div>
+		</div>
+		
+
+<!--		<div id="block-demo">
+			<div class="content">
+				<section id="demo-b">
+				
+				</section>
+			</div>
+		</div>	-->		
+
+
+        <div class="bg-white" id="block-main">	
+            <div class="block-main wrapper ">
+                
+                <div class="grid-block" id="main">
+
+                    <div class="grid-box" id="maininner">
+
+                        
+                    <section class="grid-block" id="content"><div id="system">
+
+           
+            <h1 class="title">HTML Form - problems and solutions</h1>
+            
+            <div class="rq">
+            
+            <p>HTML (Hyper Text Markup Language) is the standard markup language used to create web pages. It is written in the <a href="why-use-jquery-form-builder-9.html" class="linker">form</a> of HTML elements consisting of tags enclosed in angle brackets (like &lt;html&gt;).</p>
+<video autoplay="autoplay" poster="video/form-html.jpg" width="800" height="451" onclick="if(/Android/.test(navigator.userAgent))this.play();"><source src="video/form-builder.m4v" type="video/x-m4v" /><source src="video/form-builder.webm" type="video/webm" /><object type="application/x-shockwave-flash" data="video/flashfox.swf" width="800" height="451" style="position:relative;"><param name="movie" value="video/flashfox.swf" /><param name="allowFullScreen" value="true" /><param name="flashVars" value="autoplay=true&amp;controls=false&amp;fullScreenEnabled=false&amp;loop=false&amp;poster=http://formfan.com/posts/video/form-html.jpg&amp;src=http://formfan.com/posts/video/form-builder.m4v" /><embed src="video/flashfox.swf" width="800" height="451" style="position:relative;" flashVars="autoplay=true&amp;controls=false&amp;fullScreenEnabled=false&amp;loop=false&amp;poster=http://formfan.com/posts/video/form-html.jpg&amp;src=http://formfan.com/posts/video/form-builder.m4v" allowFullScreen="true" wmode="transparent" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer_en" /><img alt="contact form html" src="video/form-html.jpg" style="position:absolute;left:0;" width="800" height="451" title="html contact forms" /></object></video>
+<p><a href="http://formoid.com/rq/html-form-php/">HTML form</a> or <a href="http://formoid.com/rq/web-form/">web form</a> on a web page allows a user to enter data that is sent to a server for processing. These Forms can resemble paper or database forms because web users fill out the forms using checkboxes, text fields or radio buttons such as forms can be used to enter shipping or credit card data to order a product or can be used to retrieve search results from a search engine.</p>
+<div class="img"><img style="max-width:700px;width:100%;" alt="form HTML" src="images/form-html.jpg"/></div>
+<p>•	Problem with html and <a href="html-form-web-form-maker-3.html" class="linker">html form</a>:</p>
+<p>When anyone designs html forms or <a href="html-contact-form-8.html" class="linker">contact</a> forms using html without any specific tool, it creates some problems which I explained below:</p>
+<p>o	Common error and the most common source of erroneous bug reports for the HTML Validator occurs when we writing HTML tags within a script element.</p>
+<p>o	Another common error is occur when a URL which contains an ampersand ("&").</p>
+<p>o	File is not load properly in html forms.</p>
+<p>o	There is no tabbing order defined for moving between two fields or hypertext links is.</p>
+<p>o	For radio button, label text and checkboxes is not active which means by clicking on label text doesn't affect the button state.</p>
+<p>o	For checking values as they are entered onto <a href="contact-form-builder-2.html" class="linker">form</a> fields, there is no provision given. Each checking is done at the server side when the form's contents are submitted which takes more time.</p>
+<p>o	Range of form field data types is too limited in comparison with modern user interfaces and for instance there is no provision for tabular data entry, sliders or multiple pages.</p>
+<p>o	Server cannot update the fields in a submitted form and instead it has to send a complete HTML document causing screen flicker.</p>
+<p>o	For mobile browsers and desktop browsers, we have to create our <a href="online-form-maker-5.html" class="linker">form</a> individually for both which takes more time and use more man power.</p>
+<p>•	Solution:</p>
+<p>FORMOID is the best solution of all the problems which I explained above. When anyone uses FORMOID for making html forms, it provides best output which you want to use. It will display all the effect that you apply on each html <a href="html5-form-features-6.html" class="linker">forms</a>.</p>
+<p>To use this, you have to first install <a href="http://formoid.com/">Formoid.com</a> tool. This tool supports all the desktop and mobile browsers. Once you installed this software, you can easily use all the effects which are given in this tool and design your html <a href="javascript-form-validation-a.html" class="linker">form</a> or <a href="php-contact-form-7.html" class="linker">contact form</a> perfectly. Also, this tool supports responsiveness which means if you create any form using this tool it will show perfectly same in mobile browser as it shoes in desktop browser.</p>
+<p>First you have to open www.formoid.com. After that you can download this tool for your desktop or laptop and create your form. This tool is very easy install and use.</p>            
+                            <div class="rq-link"><a href="index.html">Recent Posts »</a></div>
+            
+                   
+
+                        
+            </div>
+                    
+        
+    </div></section>
+                        
+                    </div>
+                    <!-- maininner end -->
+                    
+    <aside class="grid-box" id="sidebar-a">
+
+            
+            
+            <div class="grid-box width100 grid-v"><div class="module mod-box mod-box-default  deepest"><h3 class="module-title">Related</h3>
+
+<ul class="menu menu-sidebar"><li><span class="rq-post-link"><a href="html-form-web-form-maker-3.html">HTML Form</a> & Web Form Maker</span></li><li><span class="rq-post-link"><a href="html-contact-form-8.html">HTML contact form</a></span></li><li><span class="rq-post-link">Create beautiful <a href="create-beautiful-contact-us-forms-e.html">contact us form</a>s</span></li><li><a href="php-contact-form-%e2%80%93-an-easiest-way-to-interact-with-customers-b.html">PHP Contact Form – An Easiest Way to Interact with Customers</a></li><li><span class="rq-post-link">Easiest to use online <a href="easiest-to-use-online-form-builder-d.html">form builder</a></span></li><li><span class="rq-post-link">Unique design and <a href="unique-design-and-css-forms-f.html">css form</a>s</span></li></ul>
+
+</div></div>	
+            
+            
+
+    
+    </aside>
+                                    
+                    
+                </div>
+                
+                <!-- main end -->
+
+            </div>
+        </div>
+
+		
+		<div id="block-footer">
+			<div class="content">
+			<section id="bottom-b">
+				<div id="footer-right">
+				<p>Copyright FormBuilder 2014 - All Rights Reserved</p>
+				</div>
+
+			</section>
+			</div>
+		</div>		
+		
+	</body>
+
+<!-- posts/html-form-and-web-forms-c.html  09:27:30 GMT -->
+</html>
+
